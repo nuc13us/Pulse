@@ -23,7 +23,6 @@ for banner in api.search_cursor('html:/dana/'):
    if '200' in results:
        f = open('ips','a')
        f.write(str(banner['http']['host']) + "\n")
-
        print(str(banner['http']['host']))
    counter += 1
    if counter >= limit:
